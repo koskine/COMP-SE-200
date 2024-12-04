@@ -1,5 +1,5 @@
 import assert from 'assert';
-import capitalize from '../src/capitalize.js'; // Adjust path as needed
+import capitalize from '../src/capitalize.js'; 
 
 describe('capitalize function', () => {
     it('should capitalize the first character of a lowercase string', () => {

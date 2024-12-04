@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import add from './src/add.js'; // Adjust the path as per your setup
+import add from '../src/add.js';
 
 describe('add function', () => {
     it('should return 10 when adding 6 and 4', () => {
