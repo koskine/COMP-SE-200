@@ -17,8 +17,6 @@ jobs:
       run:
         working-directory: ./project
 
-    
-
     strategy:
       matrix:
         node-version: [18.x, 20.x, 22.x]
@@ -42,4 +40,8 @@ jobs:
         npm install      
     - name: Unit Tests
       run: |
+<<<<<<< HEAD
          npm run test --passWithNoTests
+=======
+         npm run test --passWithNoTests
+>>>>>>> d319076755c161472164c1285cd4fc0d23a3c3b7
