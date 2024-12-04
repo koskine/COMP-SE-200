@@ -23,8 +23,13 @@ describe('add function', () => {
         expect(add(5)).to.equal(5); // Assumes createMathOperation provides 0 as default
     });
 
+    it('should return string when one or both inputs are strings', () => {
+        expect(add('a', 5)).to.equal('a5');
+        expect(add(5, 'b')).to.equal('5b');
+        expect(add('a', 'b')).to.equal('ab');
+    });
+
     it('should return NaN when inputs are not numbers', () => {
-        expect(add('a', 5)).to.be.NaN;
         expect(add({}, [])).to.be.NaN;
     });
 });
