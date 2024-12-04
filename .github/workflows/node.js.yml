@@ -40,11 +40,6 @@ jobs:
     - name: NPM Install
       run: |
         npm install      
-    - name: Production Build
-      run: |
-        npm run build
-      env:
-        CI: false
     - name: Unit Tests
       run: |
          npm run test --passWithNoTests
