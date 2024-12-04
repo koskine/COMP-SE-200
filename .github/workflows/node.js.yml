@@ -13,9 +13,11 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-     defaults:
+    defaults:
       run:
-        working-directory: ./src
+        working-directory: ./frontend
+
+    
 
     strategy:
       matrix:
