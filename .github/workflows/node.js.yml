@@ -41,4 +41,8 @@ jobs:
     - name: Unit Tests
       run: |
          npm run test
+         
+    - name: Coveralls
+      uses: coverallsapp/github-action@v2
+
 
