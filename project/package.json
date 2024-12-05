@@ -6,13 +6,13 @@
   "type": "module",
   "scripts": {
     "test": "mocha ./tests/**/*.test.js",
-    "coverage": "c8 mocha ./tests/**/*.test.js"
+    "test-coverage": "nyc npm test && nyc report --reporter=text-lcov"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "c8": "^10.1.2",
     "chai": "^5.1.2",
-    "mocha": "^11.0.1"
+    "mocha": "^11.0.1",
+    "nyc": "^17.1.0"
   }
 }
