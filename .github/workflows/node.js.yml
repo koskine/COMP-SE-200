@@ -40,7 +40,10 @@ jobs:
         npm install      
     - name: Unit Tests
       run: |
-         npm run test-coverage
+         npm test
+    - name: Unit Tests
+      run: |
+        npm run test-coverage
          
     - name: Coveralls
       uses: coverallsapp/github-action@v2

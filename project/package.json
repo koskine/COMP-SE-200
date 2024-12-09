@@ -5,8 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "mocha ./tests/**/*.test.js",
-    "test-coverage": "c8 npm test"
+    "test": "c8 mocha ./tests/**/*.test.js",
+    "test-coverage": "c8 report --reporter=text-lcov > coverage/tests.lcov"
   },
   "author": "",
   "license": "MIT",
