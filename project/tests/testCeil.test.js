@@ -32,6 +32,6 @@ describe('ceil function', () => {
     it('should handle non-number inputs gracefully', () => {
         assert.ok(Number.isNaN(ceil('a')));
         assert.ok(Number.isNaN(ceil(undefined)));
-        // assert.ok(Number.isNaN(ceil(null)));
+        assert.ok(Number.isNaN(ceil(null)));
     });
 });

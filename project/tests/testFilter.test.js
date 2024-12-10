@@ -1,5 +1,5 @@
 import { strict as assert } from 'assert';
-import filter from '../src/filter.js'; // Adjust the path as necessary
+import filter from '../src/filter.js'; 
 
 describe('filter function', () => {
     it('should filter elements based on the predicate', () => {

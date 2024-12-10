@@ -20,7 +20,7 @@ describe('add function', () => {
     });
 
     it('should use the default value (0) for missing parameters', () => {
-        expect(add(5)).to.equal(5); // Assumes createMathOperation provides 0 as default
+        expect(add(5)).to.equal(5); 
     });
 
     it('should return string when one or both inputs are strings', () => {

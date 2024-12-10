@@ -1,5 +1,5 @@
 import { strict as assert } from 'assert';
-import drop from '../src/drop.js'; // Adjust the path as necessary
+import drop from '../src/drop.js'; 
 
 describe('drop function', () => {
     it('should drop the default 1 element from the beginning of the array', () => {
@@ -34,6 +34,6 @@ describe('drop function', () => {
     it('should not mutate the original array', () => {
         const array = [1, 2, 3];
         drop(array, 2);
-        assert.deepStrictEqual(array, [1, 2, 3]); // Original array remains intact
+        assert.deepStrictEqual(array, [1, 2, 3]);
     });
 });

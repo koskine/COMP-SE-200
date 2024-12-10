@@ -1,5 +1,5 @@
 import { strict as assert } from 'assert';
-import isEmpty from '../src/isEmpty.js'; // Adjust the path as necessary
+import isEmpty from '../src/isEmpty.js'; 
 
 describe('isEmpty function', () => {
     it('should return true for null and undefined', () => {
@@ -57,12 +57,12 @@ describe('isEmpty function', () => {
     });
 
     it('should return true for empty array-like objects', () => {
-        const argumentsObject = (function() { return arguments; })(); // Empty arguments object
+        const argumentsObject = (function() { return arguments; })(); 
         assert.strictEqual(isEmpty(argumentsObject), true);
     });
 
     it('should return false for non-empty array-like objects', () => {
-        const argumentsObject = (function() { return arguments; })(1, 2, 3); // Non-empty arguments object
+        const argumentsObject = (function() { return arguments; })(1, 2, 3);
         assert.strictEqual(isEmpty(argumentsObject), false);
     });
 
