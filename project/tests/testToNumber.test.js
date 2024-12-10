@@ -1,5 +1,5 @@
 import { strict as assert } from 'assert';
-import toNumber from '../src/toNumber.js'; // Adjust the path as necessary
+import toNumber from '../src/toNumber.js'; 
 
 describe('toNumber function', () => {
     it('should return the same number if input is a number', () => {

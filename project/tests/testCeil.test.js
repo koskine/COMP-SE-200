@@ -1,5 +1,6 @@
 import assert from 'assert';
-import ceil from '../src/ceil.js'; // Adjust the path as needed
+import ceil from '../src/ceil.js'; 
+
 
 describe('ceil function', () => {
     it('should round up a decimal number to the nearest integer', () => {
